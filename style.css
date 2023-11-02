@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    color: white;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+table {
+    width: 300px;
+    height: 300px;
+    border-collapse: collapse;
+    position: relative;
+  }
+  
+  #content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+  }
+
+  table td {
+    width: 50px;
+    height: 50px;
+    border: 5px solid white;
+    margin: 0;
+    padding: 0;
+  }
+  table tr:first-child td {
+    border-top: 0;
+  }
+  table tr td:first-child {
+    border-left: 0;
+  }
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+  table tr td:last-child {
+    border-right: 0;
+  }
+  
+  td.X {
+    color: #f00; /* Rote Schriftfarbe für X */
+  }
+  
+  td.O {
+    color: #00f; /* Blaue Schriftfarbe für O */
+  }
+
+  td:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+
+  .winning-line {
+    border: solid 2px white;
+  }
+  
+  button {
+    background-color: #0074d9;
+    color: white;
+    border: solid 1px white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+    width: 300px;
+    margin-top: 100px;
+  }
+  
+  button:hover {
+    background-color: white;
+    color: #0074d9;
+    border: solid 1px #0074d9;
+  }
